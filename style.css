@@ -15,22 +15,28 @@
     display: none;
   }
   .header-icons {
-    margin-right: 12px;
+    display: none;
   }
   .title {
     font-family: "bolin", sans-serif;
   }
-
 }
 
 /* Small devices (640px and up) */
 @media only screen and (min-width: 640px) {
+  .menu-list {
+    display: none;
+  }
+  .header-icons {
+    display: none;
+  }
+  
+
 }
 
 /* Medium devices (768px and up) */
 @media screen and (min-width: 768px) {
-  
- 
+   
 }
 
 /* Large devices (1024px and up) */
@@ -52,6 +58,7 @@
     display: none;
   }
 }
+
 
 /* Use the font */
 body .mobile-menu.active {
@@ -101,7 +108,7 @@ body .mobile-menu.active {
 .title h1 {
   font-family: "bolin", sans-serif;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 200;
   padding-left: 22px;
 }
@@ -109,7 +116,7 @@ body .mobile-menu.active {
 .title span {
   font-family: "bolin", sans-serif;
   color: white;
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 
 .menu-items {
@@ -132,16 +139,16 @@ body .mobile-menu.active {
 }
 
 .header-icons {
-  display: flex;
-  align-items: center;
-}
+    display: flex;
+    align-items: center;
+  }
 
 svg {
   width: 1.5rem;
   height: 1.5rem;
   cursor: pointer;
   color: white;
-  margin-right: 16px;
+  margin-right: 10px;
 }
 
 /* Styling for the heading */
@@ -261,7 +268,7 @@ svg {
   font-size: 3rem; /* Decrease font size */
   margin-bottom: 3%; /* Adjust margin */
   color: #797979;
-  font-family: 'bolin';
+  font-family: "bolin";
 }
 
 .about p {
@@ -313,7 +320,7 @@ footer .newsletter {
   display: flex;
   flex-direction: column;
   width: 300px;
- margin-top: 0%;
+  margin-top: 0%;
 }
 
 footer .newsletter button {
@@ -336,15 +343,15 @@ footer .newsletter button:hover {
 footer .footer-links {
   padding-top: 30px;
   padding-right: 16px;
-  font-size: larger
+  font-size: larger;
 }
 
 footer .footer-links li:hover {
-  border: none; 
-  outline: none; 
+  border: none;
+  outline: none;
   color: white;
   border-radius: 0.15rem;
-  font-size: larger
+  font-size: larger;
 }
 
 footer .footer-links li {
@@ -353,7 +360,7 @@ footer .footer-links li {
   margin: 24px;
   cursor: pointer;
   text-align: center;
-  font-size: larger
+  font-size: larger;
 }
 
 footer .footer-icons button {
@@ -390,7 +397,7 @@ footer .footer-payment img {
   width: auto;
 }
 
-footer .footer-container  {
+footer .footer-container {
   max-width: 1400px;
   width: 100%;
   flex-wrap: wrap;
@@ -402,12 +409,12 @@ footer .footer-container  {
   justify-content: space-between;
 }
 
-footer .newsletter-input{
+footer .newsletter-input {
   padding: 5px;
   margin: 24px;
   background-color: transparent;
-  border: none; 
-  outline: none; 
+  border: none;
+  outline: none;
   box-shadow: 0px 2px 0px 0px white;
   font-size: 16px;
   text-align: center;
@@ -434,7 +441,7 @@ footer span {
 footer input:focus {
   color: white;
   background-color: #525151;
-} 
+}
 
 footer .newsletter h1 {
   font-weight: 200;
@@ -443,7 +450,7 @@ footer .newsletter h1 {
 }
 
 footer .newsletter p {
-  margin-left:8px;
+  margin-left: 8px;
 }
 
 footer .credits .footer-credits h1 {
