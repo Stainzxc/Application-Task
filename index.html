@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Cake Boutiques</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&family=Merienda&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HOME -->
+    <main>
+      <section class="home show-animate">
+        <div class="header">
+          <div class="title">
+            <h1>THE CAKE</h1>
+            <span>BOUTIQUE</span>
+          </div>
+          <div class="menu-list">
+            <ul class="menu-items">
+              <li>SIGNATURE CAKES</li>
+              <li>BESPOKE CAKES</li>
+              <li>WEDDING CAKES</li>
+              <li>CAKESICLES</li>
+              <li>CHOCOLATES</li>
+              <li>MASTER CLASSES</li>
+            </ul>
+          </div>
+          <div class="header-icons">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              data-slot="icon"
+              class=""
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              data-slot="icon"
+              class=""
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              data-slot="icon"
+              class=""
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+              />
+            </svg>
+          </div>
+          <div class="mobile-navbar">
+            <div class="burger-icon" onclick="toggleMenu()">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+            <ul class="mobile-menu">
+              <li><a href="#">SIGNATURE CAKES</a></li>
+              <li><a href="#">BESPOKE CAKES</a></li>
+              <li><a href="#">WEDDING CAKES</a></li>
+              <!-- Add more menu items -->
+            </ul>
+          </div>
+        </div>
+        <div class="absolute-container">
+          <h1 class="font-cormorant">Passion Craft</h1>
+          <div>
+            <button class="button">ORDER NOW</button>
+          </div>
+        </div>
+        <div class="absolute-bottom">
+          <button class="more-button icon">
+            MORE
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              data-slot="icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="cake-variants" id="main">
+          <div class="cake-item">
+            <div class="image-container">
+              <img
+                src="./images/birthdayCake.jpg"
+                alt="Birthday Cake"
+                class="img-container animate"
+              />
+              <h1 class="cake-title animate">Birthday Cake</h1>
+            </div>
+          </div>
+          <div class="cake-item">
+            <div class="image-container">
+              <img
+                src="./images/weddingCake.jpg"
+                alt="Wedding Cake"
+                class="img-container animate"
+              />
+              <h1 class="cake-title animate">Wedding Cake</h1>
+            </div>
+          </div>
+          <div class="cake-item">
+            <div class="image-container">
+              <img
+                src="./images/christmasCake.jpg"
+                alt="Christmas Cake"
+                class="img-container animate"
+              />
+              <h1 class="cake-title animate">Christmas Cake</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT -->
+      <section class="information" id="about">
+        <div>
+          <div class="about">
+            <h1>About the</h1>
+            <span>Cake Boutique</span>
+            <p>
+              The Cake Boutique combines craftsmanship and complexity into
+              original cake design where delicious flavor and art are
+              synonymous, bringing beauty into the most ordinary days. The Cake
+              Boutique is Dubai’s first and only exclusively-online cake shop.
+              Innovative and advanced beyond the cake design industry today,
+              award-winning Cake Artist, Beth’s designs, are one-of-a-kind,
+              featuring digitally sketched illustrations that are unique to the
+              Waldorf Astoria DIFC.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- PRODUCTS -->
+      <section class="products">
+        <div class="product-container">
+          <img src="./images/cake1.jpg" alt="" class="product-cake animate" />
+          <img src="./images/cake2.jpg" alt="" class="product-cake animate" />
+          <img src="./images/cake3.jpg" alt="" class="product-cake animate" />
+          <img src="./images/cake4.jpg" alt="" class="product-cake animate" />
+          <img src="./images/cake5.jpg" alt="" class="product-cake animate" />
+          <img src="./images/cake6.jpg" alt="" class="product-cake animate" />
+          <img src="./images/cake7.jpg" alt="" class="product-cake animate" />
+          <img src="./images/cake8.jpg" alt="" class="product-cake animate" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="credits">
+        <div class="footer-container">
+          <div class="newsletter">
+            <h1>Newsletter</h1>
+            <div>
+              <input
+                type="email"
+                placeholder="Email"
+                id="email"
+                class="newsletter-input"
+              />
+              <label for="email"></label>
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="First Name"
+                id="firstname"
+                class="newsletter-input"
+              />
+              <label for="firstname"></label>
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="Last Name"
+                id="lastname"
+                class="newsletter-input"
+              />
+              <label for="lastname"></label>
+            </div>
+            <div>
+              <input
+                type="text"
+                placeholder="Phone Number"
+                id="phone"
+                class="newsletter-input"
+              />
+              <label for="phone"></label>
+            </div>
+            <span>Marketing Permissions</span>
+            <div class="checkbox">
+              <div>
+                <input type="checkbox" />
+                <label for="">Email</label>
+              </div>
+              <div>
+                <input type="checkbox" />
+                <label for="">SMS</label>
+              </div>
+            </div>
+            <p>
+              By signing up you are agreeing to receive the latest news and
+              exclusive offers from our restaurants
+            </p>
+            <button>Subscribe</button>
+          </div>
+          <div>
+            <ul class="footer-links">
+              <li>Signature Cakes</li>
+              <li>Bespoke Cakes</li>
+              <li>Wedding Cakes</li>
+              <li>Cakesicles</li>
+              <li>Chocolates</li>
+              <li>Master Classes</li>
+            </ul>
+          </div>
+          <div>
+            <ul class="footer-links">
+              <li>Payments And Delivery</li>
+              <li>Help Center</li>
+              <li>FAQs</li>
+              <li>Contact Us</li>
+            </ul>
+            <div class="footer-icons">
+              <button><img src="./images/tiktok.png" alt="" /></button>
+              <button><img src="./images/youtube.png" alt="" /></button>
+              <button><img src="./images/facebook.png" alt="" /></button>
+              <button><img src="./images/instagram.png" alt="" /></button>
+            </div>
+            <div class="footer-payment">
+              <img src="./images/visa.png" alt="" class="payment-img" />
+              <img src="./images/master.png" alt="" class="payment-img" />
+              <img src="./images/america.png" alt="" class="payment-img" />
+              <img src="./images/paypal.png" alt="" class="payment-img" />
+            </div>
+          </div>
+        </div>
+        <div class="footer-credits">
+          <h1>&copy; 2023 The Cake Boutique. All rights reserved.</h1>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

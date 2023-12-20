@@ -1,0 +1,503 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "bolin";
+  src: url("./font/Bolin\ Gerii.otf");
+  src: url("./font/Bolin\ Gerii.otf") format("opentype");
+}
+
+/* Extra Small devices (375px and up) */
+@media screen and (min-width: 375px) {
+  .menu-list {
+    display: none;
+  }
+  .header-icons {
+    margin-right: 12px;
+  }
+  .title {
+    font-family: "bolin", sans-serif;
+  }
+
+}
+
+/* Small devices (640px and up) */
+@media only screen and (min-width: 640px) {
+}
+
+/* Medium devices (768px and up) */
+@media screen and (min-width: 768px) {
+  
+ 
+}
+
+/* Large devices (1024px and up) */
+@media screen and (min-width: 1024px) {
+  .menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "bolin", sans-serif;
+    margin-left: 2rem;
+    color: white;
+    font-size: 0.875rem;
+  }
+  .burger-icon {
+    display: none;
+  }
+
+  .mobile-navbar {
+    display: none;
+  }
+}
+
+/* Use the font */
+body .mobile-menu.active {
+  font-family: sans-serif;
+}
+
+.home {
+  background-image: linear-gradient(
+      rgba(26, 32, 44, 0.5),
+      rgba(26, 32, 44, 0.5)
+    ),
+    url("./images/bgImage.jpg");
+  background-position: center;
+  backdrop-filter: brightness(50%);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+/* Absolute positioning for the container */
+.absolute-container {
+  position: inherit;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.absolute-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  margin-left: 10px;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+}
+
+.title {
+  font-family: "bolin", sans-serif;
+}
+
+.title h1 {
+  font-family: "bolin", sans-serif;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 200;
+  padding-left: 22px;
+}
+
+.title span {
+  font-family: "bolin", sans-serif;
+  color: white;
+  font-size: 2.25rem;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-items li {
+  margin-right: 1.25rem;
+  cursor: pointer;
+  transition: border-bottom 0.3s; /* Simplified transition */
+  border-bottom: 2px solid transparent;
+  list-style: none;
+  color: white;
+}
+
+.menu-items li:hover {
+  border-bottom: 2px solid white;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+
+svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  color: white;
+  margin-right: 16px;
+}
+
+/* Styling for the heading */
+.font-cormorant {
+  font-family: Cormorant, serif;
+  font-size: 4rem;
+  color: white;
+  text-transform: capitalize;
+}
+
+/* Styling for the button */
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 3rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: #797979;
+  color: white;
+}
+
+/* Styling for the "MORE" button at the bottom */
+.more-button {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  min-width: fit-content;
+  width: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.more-button .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+/* Additional styles for cake variants */
+.cake-variants {
+  display: flex;
+  justify-content: center;
+  max-height: fit-content;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.cake-item {
+  position: relative;
+}
+
+.image-container h1 {
+  position: absolute;
+  font-family: "bolin";
+  color: white;
+  width: max-content;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 32px;
+  padding: 8px;
+  backdrop-filter: brightness(50%);
+  font-size: 32px;
+}
+
+.img-container {
+  width: fit-content;
+  height: 550px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  transition: all 0.3s ease; /* Transition duration 300ms */
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.img-container:hover {
+  opacity: 0.8; /* Reduce opacity on hover */
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.about {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center text */
+  padding: 80px; /* Adjust padding */
+}
+
+.about h1 {
+  font-family: "bolin";
+  font-size: 3rem; /* Decrease font size */
+  margin: 0;
+  font-weight: 200;
+  color: #797979;
+}
+
+.about span {
+  font-size: 3rem; /* Decrease font size */
+  margin-bottom: 3%; /* Adjust margin */
+  color: #797979;
+  font-family: 'bolin';
+}
+
+.about p {
+  font-size: 16px; /* Decrease font size */
+  margin: 0 auto; /* Center paragraphs horizontally */
+  color: #797979;
+  line-height: 1.5; /* Adjust line height */
+  max-width: 800px; /* Limit width for readability */
+  padding: 20px 0; /* Adjust padding */
+}
+
+.product-container {
+  display: flex;
+  max-width: 1400px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-container img {
+  width: 300px;
+  height: 200px;
+  padding: 5px;
+  transition: all 0.3s ease; /* Transition duration 300ms */
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+
+.product-cake:hover {
+  opacity: 0.8; /* Reduce opacity on hover */
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+footer {
+  background-color: black;
+  color: #797979;
+  font-weight: 200;
+}
+
+footer .credits .footer-container {
+  display: flex;
+  justify-content: center;
+}
+
+footer .newsletter {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+ margin-top: 0%;
+}
+
+footer .newsletter button {
+  font-size: medium;
+  color: black;
+  background-color: white;
+  padding: 8px 32px;
+  border-radius: 1.5rem;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+footer .newsletter button:hover {
+  font-size: medium;
+  color: white;
+  background-color: #797979;
+}
+
+footer .footer-links {
+  padding-top: 30px;
+  padding-right: 16px;
+  font-size: larger
+}
+
+footer .footer-links li:hover {
+  border: none; 
+  outline: none; 
+  color: white;
+  border-radius: 0.15rem;
+  font-size: larger
+}
+
+footer .footer-links li {
+  list-style: none;
+  width: 250px;
+  margin: 24px;
+  cursor: pointer;
+  text-align: center;
+  font-size: larger
+}
+
+footer .footer-icons button {
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+footer .footer-icons {
+  text-align: center;
+}
+
+footer .footer-icons img {
+  width: 1rem;
+  height: 1rem;
+  padding: 8px;
+}
+
+footer .footer-payment {
+  text-align: center;
+  background-color: white;
+  border-radius: 1.5rem;
+  margin-top: 8px;
+  padding-right: 0;
+  margin-left: 8px;
+}
+
+footer .footer-payment img {
+  width: 18px;
+  height: 18px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  width: auto;
+}
+
+footer .footer-container  {
+  max-width: 1400px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer .newsletter-input{
+  padding: 5px;
+  margin: 24px;
+  background-color: transparent;
+  border: none; 
+  outline: none; 
+  box-shadow: 0px 2px 0px 0px white;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  border-radius: 0.15rem;
+}
+
+footer .checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+
+.checkbox label {
+  margin-right: 24px;
+}
+
+footer span {
+  text-align: center;
+}
+
+footer input:focus {
+  color: white;
+  background-color: #525151;
+} 
+
+footer .newsletter h1 {
+  font-weight: 200;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer .newsletter p {
+  margin-left:8px;
+}
+
+footer .credits .footer-credits h1 {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 100;
+  color: white;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Mobile */
+/* Mobile Navbar Styles */
+.mobile-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+}
+
+.burger-icon {
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu li {
+  padding: 8px 0;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+/* Show/hide mobile menu */
+/* .mobile-menu.active {
+  display: block;
+  width: auto;
+  background-color: black;
+} */
